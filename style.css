@@ -1,0 +1,138 @@
+/* Simple, clean Google-Sites-like style */
+:root{
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --accent: #2c3e50;
+  --muted: #6b7280;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Noto Sans Bengali", Arial, sans-serif;
+  background:var(--bg);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  width:92%;
+  max-width:1024px;
+  margin:0 auto;
+  padding:28px 0;
+}
+
+/* Header */
+.site-header{
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  padding:22px 0;
+}
+.header-inner{
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+.avatar{
+  width:140px;
+  height:140px;
+  object-fit:cover;
+  border-radius:8px;
+  border:4px solid #fff;
+  box-shadow:0 6px 18px rgba(44,62,80,0.08);
+}
+.intro h1{
+  margin:0 0 6px 0;
+  font-size:28px;
+  color:var(--accent);
+}
+.subtitle{
+  margin:0;
+  font-size:16px;
+  color:var(--muted);
+}
+.meta{
+  margin:8px 0 0 0;
+  color:var(--muted);
+  font-size:14px;
+}
+.contact a{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* Cards */
+.card{
+  background:var(--card);
+  padding:20px;
+  margin:18px 0;
+  border-radius:10px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.04);
+  border: 1px solid rgba(15,23,42,0.03);
+}
+.card h2{
+  margin:0 0 12px 0;
+  color:var(--accent);
+}
+
+/* two column layout for about */
+.two-col{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+.two-col > div{
+  flex:1 1 260px;
+}
+.card ul{
+  padding-left:18px;
+}
+
+/* gallery grid */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:12px;
+}
+.grid img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:6px;
+  border:1px solid rgba(0,0,0,0.05);
+}
+
+/* reviews */
+blockquote{
+  margin:0;
+  padding:14px 18px;
+  background:#f8fafc;
+  border-left:4px solid var(--accent);
+  border-radius:6px;
+  color:#0f172a;
+}
+blockquote footer{
+  margin-top:8px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* footer */
+.site-footer{
+  background:var(--accent);
+  color:white;
+  text-align:center;
+  padding:14px 0;
+  margin-top:28px;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+}
+
+/* responsive */
+@media (max-width:640px){
+  .header-inner{flex-direction:column; text-align:center}
+  .avatar{width:120px;height:120px}
+  .intro h1{font-size:22px}
+  .two-col{flex-direction:column}
+}
