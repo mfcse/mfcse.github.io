@@ -5,81 +5,124 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Maruf Sir — HSC ICT</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="HSC ICT with Abdullah Al Maruf — Course info, gallery, reviews & contact" />
 </head>
 <body>
+  <!-- Skip links (accessibility) -->
+  <a class="skip-link" href="#main">মূল কনটেন্টে যান</a>
+
+  <!-- Top header (clean like Google Sites) -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="profile">
-        <img src="potrait2.jpg" alt="Maruf Sir" class="avatar" />
-      </div>
-      <div class="intro">
-        <h1>Maruf Sir</h1>
-        <p class="subtitle">HSC ICT with <strong>ABDULLAH AL MARUF</strong></p>
-        <p class="meta">Lecturer, CUET College </p>
-        <p class="meta">Examiner, Chattogram Board</p>
-        <p class="meta">B.Sc Engineering in CSE (University of Chittagong) </p>
-        <p class="meta">Freelance Web Developer</p>
-        <p class="meta">Ex Lecturer, Southpoint College</p>
-        
-        <p class="contact">Contact: <a href="tel:01558946994">01558946994</a> (WhatsApp)</p>
-      </div>
+      <h1 class="brand">Maruf Sir</h1>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#about">কোর্স</a>
+        <a href="#gallery">ফটো</a>
+        <a href="#reviews">রিভিউ</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card about">
-      <h2>কোর্স সম্পর্কিত তথ্য</h2>
+  <!-- Intro/profile card -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <img class="avatar" src="potrait2.jpg" alt="Abdullah Al Maruf portrait" />
+      <div class="hero-text">
+        <h2>HSC ICT with <span>ABDULLAH AL MARUF</span></h2>
+        <p class="meta">
+          Lecturer • B.Sc (CSE) • Examiner (Chattogram Board)
+        </p>
+        <p class="contact-line">
+          📞 <a href="tel:01558946994">01558946994</a> (WhatsApp) •
+          ✉️ <a href="mailto:maruf.cu.cse09@gmail.com">maruf.cu.cse09@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container">
+    <!-- Course info -->
+    <section id="about" class="card">
+      <h3>কোর্স সম্পর্কিত তথ্য</h3>
       <div class="two-col">
-        <div>
-          <ul>
-            <li>হাতে কলমে উচ্চ মাধ্যমিকের আইসিটি শিক্ষা</li>
-            <li>প্রয়োজনীয় সংখ্যক ব্যবহারিক ক্লাস</li>
-            <li>সহজ উপায়ে আইসিটির জটিল টপিকসমূহের উপস্থাপন</li>
-            <li>বেসিক নির্ভর ও আনন্দদায়ক পাঠদান</li>
-            <li>প্রয়োজনীয় ক্লাস টেস্ট ও মডেল টেস্ট</li>
-          </ul>
-        </div>
-        <div>
-          <p><strong>রেগুলার ব্যাচ</strong> (স্থানঃ পাহাড়তলী/কলেজ)</p>
-          <p><strong>স্পেশাল ব্যাচ</strong> (সর্বোচ্চ ৮ জন, স্থানঃ বাসা)</p>
-          <p>ব্যাচ শিডিউলের জন্য ফোন/হোয়াটসঅ্যাপ করুন।</p>
+        <ul class="tick-list">
+          <li>হাতে কলমে উচ্চ মাধ্যমিকের আইসিটি শিক্ষা</li>
+          <li>প্রয়োজনীয় সংখ্যক ব্যবহারিক ক্লাস</li>
+          <li>সহজ উপায়ে আইসিটির জটিল টপিক উপস্থাপন</li>
+          <li>বেসিক নির্ভর ও আনন্দদায়ক পাঠদান</li>
+          <li>প্রয়োজনীয় সংখ্যক ক্লাস টেস্ট ও মডেল টেস্ট</li>
+        </ul>
+        <div class="batch-info">
+          <p><strong>লং টার্ম কোর্স</strong> — রেগুলার ব্যাচ (স্থানঃ পাহাড়তলী/কলেজ)</p>
+          <p><strong>শর্ট টার্ম কোর্স</strong></p>
+          <p><strong>স্পেশাল ব্যাচ</strong> — সর্বোচ্চ ৮ জন, স্থানঃ বাসা</p>
+          <p class="muted">ব্যাচ শিডিউলের জন্য ফোন/হোয়াটসঅ্যাপ করতে হবে।</p>
         </div>
       </div>
     </section>
 
-    <section class="card gallery">
-      <h2>বাচ/টপার ও ফটো</h2>
+    <!-- Gallery grid (like Google Sites image sections) -->
+    <section id="gallery" class="card">
+      <h3>ব্যাচ/টপার ও ফটো</h3>
       <div class="grid">
-        <!-- 6 placeholders for images; replace src with actual images -->
-        <img src="https://photos.app.goo.gl/H3EgMMYt3UzDL6Bh8" alt="Batch 2023">
-        <img src="https://via.placeholder.com/300x200?text=Batch+2024" alt="Batch 2024">
-        <img src="https://via.placeholder.com/300x200?text=Special+Batch+2023" alt="Special Batch">
-        <img src="https://via.placeholder.com/300x200?text=Exam+Topper" alt="Exam Topper">
-        <img src="https://via.placeholder.com/300x200?text=Student+Review" alt="Student Review">
-        <img src="https://via.placeholder.com/300x200?text=More" alt="More">
+        <figure class="tile">
+          <img src="https://via.placeholder.com/640x420?text=Batch+2023" alt="Batch 2023" />
+          <figcaption>Batch 2023</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="https://via.placeholder.com/640x420?text=Batch+2024" alt="Batch 2024" />
+          <figcaption>Batch 2024</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="https://via.placeholder.com/640x420?text=Special+Batch+2023" alt="Special Batch 2023" />
+          <figcaption>Special Batch 2023</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="https://via.placeholder.com/640x420?text=Exam+Topper" alt="Exam Topper" />
+          <figcaption>Exam Topper</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="https://via.placeholder.com/640x420?text=Exam+Topper" alt="Exam Topper" />
+          <figcaption>Exam Topper</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="https://via.placeholder.com/640x420?text=More" alt="More photos" />
+          <figcaption>More</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="card reviews">
-      <h2>Student Review</h2>
-      <div class="review-list">
+    <!-- Reviews -->
+    <section id="reviews" class="card">
+      <h3>Student Review</h3>
+      <div class="review">
         <blockquote>
-          "ভালো নির্দেশনা ও সহজ উপস্থাপনা — পরীক্ষায় খুবই সহায়ক ছিল।"
-          <footer>— একজন সন্তুষ্ট শিক্ষার্থী</footer>
+          “ভালো নির্দেশনা ও সহজ উপস্থাপনা — পরীক্ষায় খুবই সহায়ক ছিল।”
         </blockquote>
+        <div class="review-photos">
+          <img src="https://via.placeholder.com/280x180?text=Review+1" alt="Student review 1" />
+          <img src="https://via.placeholder.com/280x180?text=Review+2" alt="Student review 2" />
+          <img src="https://via.placeholder.com/280x180?text=Review+3" alt="Student review 3" />
+          <img src="https://via.placeholder.com/280x180?text=Review+4" alt="Student review 4" />
+        </div>
       </div>
     </section>
 
-    <section class="card contact-card" id="contact">
-      <h2>যোগাযোগ</h2>
-      <p>Email: <a href="mailto:maruf.cu.cse09@gmail.com">maruf.cu.cse09@gmail.com</a></p>
-      <p>Cell: <a href="tel:01558946994">01558946994</a></p>
+    <!-- Contact -->
+    <section id="contact" class="card contact-card">
+      <h3>যোগাযোগ</h3>
+      <p>✉️ Email: <a href="mailto:maruf.cu.cse09@gmail.com">maruf.cu.cse09@gmail.com</a></p>
+      <p>📞 Cell: <a href="tel:01558946994">01558946994</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© ২০২৫ Maruf Sir | All rights reserved</p>
+      <p>© ২০২৫ Maruf Sir • Google-Sites-style single page</p>
+      <p class="foot-links">
+        <a href="#">Report abuse</a> · <a href="#">Page details</a>
+      </p>
     </div>
   </footer>
 </body>
